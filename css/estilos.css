@@ -115,7 +115,7 @@ div[class^="column"]{
      padding: 10px;
      color: white;
   }
-/* -- Media Pagina RETRATOS -- */
+/* -- Media Pagina PAISAJES y RETRATOS -- */
   div [class*="imagen"]{
     min-height: 200px;
     width: 33.3%;
@@ -167,7 +167,7 @@ div[class^="column"]{
   div[class^="column"]{
     width: 100%;
   }
-/* -- Media Pagina RETRATOS -- */
+/* -- Media Pagina PAISAJES y RETRATOS -- */
   div [class*="imagen"]{
     min-height: 200px;
     width: 100%;
@@ -177,10 +177,8 @@ div[class^="column"]{
     flex-flow: wrap;
   }
 }
-/* --------------- Pagina PAISAJES --------------- */
 
-
-/* --------------- Pagina RETRATOS --------------- */
+/* --------------- Pagina PAISAJES y RETRATOS --------------- */
 
 #galeria{
  background: #d5c75f;
