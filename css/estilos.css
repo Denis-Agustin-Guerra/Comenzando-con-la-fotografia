@@ -1,0 +1,220 @@
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../fonts/DancingScript.otf');
+}
+/* --------------- Pagina INICIO --------------- */
+body{
+  font-family: DancingScript;
+  background: #02010a;
+}
+/* -- Encabezado --*/
+
+#encabezado{
+  background: #5b7989;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+header h1{
+
+  color: White;
+  padding: 10px;
+  text-shadow:2px 2px #02010a;
+}
+/* -- Menu de navegacion -- */
+#navegador {
+  padding: 10px;
+}
+#navegador a{
+   padding: 10px;
+   color: white;
+}
+/* -- Contenedor de Imagen Central -- */
+.img-cen{
+  background: #82c3a6;
+  text-align: center;
+  padding: 2%;
+
+
+}
+/* -- Imagen Central -- */
+.img-cen img{
+  width: 80%;
+  -webkit-box-shadow: 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+}
+/* -- Imagenes Secundarias -- */
+.contenedor-img {
+  background: #d5c75f;
+  display: flex;
+  flex-flow: column row;
+  text-align: center;
+}
+.img-sec1, .img-sec2{
+  width: 50%;
+}
+#paisaje{
+  border: 2px solid black;
+  -webkit-box-shadow: 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+  width: 90%;
+  transition-duration: 1s;
+}
+#paisaje:hover{
+  transition-property: all;
+  transition-duration: 1s;
+  transform: rotate(10deg);
+  -webkit-box-shadow: 2px 2px #82c3a6;
+  -moz-box-shadow: 2px 2px #82c3a6;
+}
+#retrato{
+  border: 1px solid black;
+  width:90%;
+  -webkit-box-shadow: 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+  transition-duration: 1s;
+}
+#retrato:hover{
+  transition-property: all;
+  transition-duration: 1s;
+  transform: translate(20px, -5px);
+  -webkit-box-shadow: 2px 2px #82c3a6;
+  -moz-box-shadow: 2px 2px #82c3a6;
+}
+/* -- Pie de pagina -- */
+footer{
+  border-radius: 0 0 10px 10px;
+  background: #C6d5c5;
+  display: flex;
+  flex-flow: column row;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+}
+div[class^="column"]{
+  width: 25%;
+  padding: 0 2% 0 2%;
+}
+
+/* --------------- Media  --------------- */
+@media {
+  #contenido{
+    width: 900px;
+    margin: 0 auto;
+  }
+  header h1{
+    display: inline;
+    text-align: left;
+  }
+  #navegador {
+    display: inline;
+    float: right;
+    padding: 10px;
+  }
+  #navegador a{
+     padding: 10px;
+     color: white;
+  }
+/* -- Media Pagina RETRATOS -- */
+  div [class*="imagen"]{
+    min-height: 200px;
+    width: 33.3%;
+  }
+  #fila1, #fila2{
+    display: flex;
+    flex-flow: column row;
+  }
+}
+/* ---------------------- */
+@media (max-width: 900px){
+  #contenido{
+    width: 100%;
+    margin: 0 auto;
+  }
+  #encabezado{
+    padding-bottom: 40px;
+    text-align: center;
+    }
+  header h1{
+      Width: 100%;
+    }
+  #navegador {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  #navegador a{
+     padding: 10px;
+     color: white;
+  }
+  .contenedor-img {
+    background: #d5c75f;
+    display: flex;
+    flex-flow: wrap;
+    text-align: center;
+  }
+  .img-sec1, .img-sec2{
+    width: 100%;
+  }
+  footer{
+    border-radius: 0 0 10px 10px;
+    background: #C6d5c5;
+    display: flex;
+    flex-flow: wrap;
+    padding: 5vw;
+  }
+  div[class^="column"]{
+    width: 100%;
+  }
+/* -- Media Pagina RETRATOS -- */
+  div [class*="imagen"]{
+    min-height: 200px;
+    width: 100%;
+  }
+  #fila1, #fila2{
+    display: flex;
+    flex-flow: wrap;
+  }
+}
+/* --------------- Pagina PAISAJES --------------- */
+
+
+/* --------------- Pagina RETRATOS --------------- */
+
+#galeria{
+ background: #d5c75f;
+}
+#galeria img{
+  width: 90%;
+  -webkit-box-shadow: 2px 2px #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+}
+div [class*="imagen"]{
+    padding: 10px;
+}
+#fila1, #fila2{
+  text-align: center;
+}
+.imagen1{
+  filter: blur(10px);
+}
+.imagen2{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.imagen3{
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+.imagen4{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.imagen5{
+
+}
+.imagen6{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}

@@ -1,0 +1,14 @@
+footer{
+  border-radius: 0 0 10px 10px;
+  background: #C6d5c5;
+  display: flex;
+  flex-flow: column row;
+}
+footer a{
+  text-decoration: none;
+  color: black;
+}
+div[class^="column"]{
+  width: 25%;
+  padding: 0 2% 0 2%;
+}
