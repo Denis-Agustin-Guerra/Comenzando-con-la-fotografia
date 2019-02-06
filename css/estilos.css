@@ -2,6 +2,18 @@
   font-family: 'DancingScript';
   src: url('../fonts/DancingScript.otf');
 }
+/* -- Animacion --*/
+@-webkit-keyframes animacion{
+			0%{
+				margin-top: 150%;
+			}
+			60%{
+				margin-top: -5%;
+			}
+			100%{
+				margin-top: 0%;
+			}
+		}
 /* --------------- Pagina INICIO --------------- */
 body{
   font-family: DancingScript;
@@ -13,6 +25,8 @@ body{
   background: #5b7989;
   padding: 10px;
   border-radius: 10px 10px 0px 0px;
+  animation-name: animacion;
+  animation-duration: 1s;
 }
 header h1{
 
